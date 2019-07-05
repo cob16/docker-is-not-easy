@@ -1,5 +1,5 @@
 UID ?= $(shell id -u)
-COMPOSE = UID=$(UID) docker-compose
+COMPOSE = env UID=$(UID) docker-compose
 
 
 build:
